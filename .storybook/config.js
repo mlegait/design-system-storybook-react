@@ -1,7 +1,4 @@
-import { configure } from '@storybook/react';
+import { load } from "@storybook/react";
 
-function loadStories() {
-  require('../src/stories');
-}
-
-configure(loadStories, module);
+// automatically import all files ending in *.stories.js or *.stories.mdx
+load(require.context("../src", true, /\.stories\.(js|mdx)$/), module);

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -37,6 +38,7 @@
     "@storybook/addon-links": "^5.2.0-beta.18",
     "@storybook/addons": "^5.2.0-beta.18",
     "@storybook/react": "^5.2.0-beta.18",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.12.0"
   }
 }

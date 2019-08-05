@@ -1,0 +1,17 @@
+.correctIncorrectCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  &__card {
+    flex: 1;
+
+    &--correct {
+      margin-right: 1rem;
+    }
+
+    &--incorrect {
+      margin-left: 1rem;
+    }
+  }
+}

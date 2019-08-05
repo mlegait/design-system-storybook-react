@@ -1,0 +1,48 @@
+$color-correct: #24a148;
+$color-incorrect: #ee538b;
+$card-padding: 1rem;
+$icon-size: 24px;
+
+.exampleCard {
+  &__card {
+    position: relative;
+    padding: $card-padding;
+    background-color: white;
+    border: 1px solid lightgray;
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+
+    &--correct {
+      border-top: 3px solid $color-correct;
+    }
+    &--incorrect {
+      border-top: 3px solid $color-incorrect;
+    }
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    left: $card-padding;
+    top: $card-padding;
+    width: $icon-size;
+    height: $icon-size;
+
+    &--correct {
+      fill: $color-correct;
+    }
+    &--incorrect {
+      fill: $color-incorrect;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    padding: $card-padding;
+  }
+
+  &__caption {
+    padding: 0.5rem 0;
+  }
+}

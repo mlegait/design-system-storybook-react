@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { allIconNames, allIcons } from './glyphs';
+import './Icon.scss';
 
 const Icon = ({ glyph }) => {
   const IconClass = allIcons[glyph];

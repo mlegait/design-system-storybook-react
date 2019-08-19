@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import { Story, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Meta, Preview } from '@storybook/addon-docs/blocks';
 import { Button } from '../../components/Button';
 
 <Meta
@@ -12,157 +12,190 @@ import { Button } from '../../components/Button';
 
 ## Primary button
 
-<Story name="Primary" parameters={{ position: 401 }}>
-  <Button onClick={action('clicked')} label="Button" kind="primary" />
-</Story>
-
-<Button onClick={action('clicked')} label="Button" kind="primary" disabled />
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="primary"
-  icon="plus"
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="primary"
-  icon="plus"
-  disabled
-/>
-
-<Button onClick={action('clicked')} kind="primary" icon="plus" />
+<Preview>
+  <Story name="Primary" parameters={{ position: 401 }}>
+    <>
+      <Button onClick={action('clicked')} label="Button" kind="primary" />
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="primary"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="primary"
+        icon="plus"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="primary"
+        icon="plus"
+        disabled
+      />
+      <Button onClick={action('clicked')} kind="primary" icon="plus" />
+    </>
+  </Story>
+</Preview>
 
 ## Secondary button
 
-<Story name="Secondary" parameters={{ position: 402 }}>
-  <Button onClick={action('clicked')} label="Button" kind="secondary" />
-</Story>
-
-<Button onClick={action('clicked')} label="Button" kind="secondary" disabled />
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="secondary"
-  icon="plus"
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="secondary"
-  icon="plus"
-  disabled
-/>
-
-<Button onClick={action('clicked')} kind="secondary" icon="plus" />
+<Preview>
+  <Story name="Secondary" parameters={{ position: 402 }}>
+    <>
+      <Button onClick={action('clicked')} label="Button" kind="secondary" />
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="secondary"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="secondary"
+        icon="plus"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="secondary"
+        icon="plus"
+        disabled
+      />
+      <Button onClick={action('clicked')} kind="secondary" icon="plus" />
+    </>
+  </Story>
+</Preview>
 
 ## Tertiary button
 
-<Story name="Tertiary" parameters={{ position: 403 }}>
-  <Button onClick={action('clicked')} label="Button" kind="tertiary" />
-</Story>
-
-<Button onClick={action('clicked')} label="Button" kind="tertiary" disabled />
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="tertiary"
-  icon="plus"
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="tertiary"
-  icon="plus"
-  disabled
-/>
+<Preview>
+  <Story name="Tertiary" parameters={{ position: 403 }}>
+    <>
+      <Button onClick={action('clicked')} label="Button" kind="tertiary" />
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="tertiary"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="tertiary"
+        icon="plus"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="tertiary"
+        icon="plus"
+        disabled
+      />
+    </>
+  </Story>
+</Preview>
 
 ## Ghost button
 
-<Story name="Ghost" parameters={{ position: 404 }}>
-  <Button onClick={action('clicked')} label="Button" kind="ghost" />
-</Story>
-
-<Button onClick={action('clicked')} label="Button" kind="ghost" disabled />
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="ghost"
-  icon="plus"
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="ghost"
-  icon="plus"
-  disabled
-/>
+<Preview>
+  <Story name="Ghost" parameters={{ position: 404 }}>
+    <>
+      <Button onClick={action('clicked')} label="Button" kind="ghost" />
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="ghost"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="ghost"
+        icon="plus"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="ghost"
+        icon="plus"
+        disabled
+      />
+    </>
+  </Story>
+</Preview>
 
 ## Danger button
 
-<Story name="Danger" parameters={{ position: 405 }}>
-  <Button onClick={action('clicked')} label="Button" kind="danger" />
-</Story>
-
-<Button onClick={action('clicked')} label="Button" kind="danger" disabled />
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="danger"
-  icon="plus"
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="danger"
-  icon="plus"
-  disabled
-/>
+<Preview>
+  <Story name="Danger" parameters={{ position: 405 }}>
+    <>
+      <Button onClick={action('clicked')} label="Button" kind="danger" />
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="danger"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="danger"
+        icon="plus"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="danger"
+        icon="plus"
+        disabled
+      />
+    </>
+  </Story>
+</Preview>
 
 ## Small primary button
 
-<Story name="Small Primary" parameters={{ position: 406 }}>
-  <Button
-    onClick={action('clicked')}
-    label="Button"
-    kind="primary"
-    size="small"
-  />
-</Story>
-
-<Button
-  onClick={action('clicked')}
-  label="Button"
-  kind="primary"
-  size="small"
-  disabled
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="primary"
-  size="small"
-  icon="plus"
-/>
-
-<Button
-  onClick={action('clicked')}
-  label="With icon"
-  kind="primary"
-  size="small"
-  icon="plus"
-  disabled
-/>
-
-<Button onClick={action('clicked')} kind="primary" size="small" icon="plus" />
+<Preview>
+  <Story name="Small Primary" parameters={{ position: 406 }}>
+    <>
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="primary"
+        size="small"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="Button"
+        kind="primary"
+        size="small"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="primary"
+        size="small"
+        icon="plus"
+      />
+      <Button
+        onClick={action('clicked')}
+        label="With icon"
+        kind="primary"
+        size="small"
+        icon="plus"
+        disabled
+      />
+      <Button
+        onClick={action('clicked')}
+        kind="primary"
+        size="small"
+        icon="plus"
+      />
+    </>
+  </Story>
+</Preview>

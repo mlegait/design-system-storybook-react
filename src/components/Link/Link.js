@@ -11,6 +11,7 @@ import React from 'react';
 const Link = ({ href, children }) => <a href={href}>{children}</a>;
 
 Link.propTypes = {
+  /** the URL of the page the link goes to */
   href: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };

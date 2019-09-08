@@ -11,7 +11,6 @@ const loaderFn = () => [
   require('../src/DesignSystem/Components/Select.stories'),
   require('../src/DesignSystem/Components/SkeletonText.stories'),
   require('../src/stories/Components/Button.stories.mdx'),
-  require('../src/stories/Components/Link.stories.js'),
   require('../src/DesignSystem/Resources/DesignResources.stories.mdx'),
 ];
 

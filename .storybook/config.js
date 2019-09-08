@@ -6,11 +6,11 @@ addDecorator(story => <Container story={story} />);
 
 // We want to force the files to load in a specific order.
 const loaderFn = () => [
-  require('../src/stories/Guidelines/Content.stories.mdx'),
-  require('../src/components/Accordion/Accordion.stories'),
+  require('../src/DesignSystem/Guidelines/Content.stories.mdx'),
+  require('../src/DesignSystem/Components/Accordion.stories'),
   require('../src/stories/Components/Button.stories.mdx'),
   require('../src/stories/Components/Link.stories.js'),
-  require('../src/stories/Resources/DesignResources.stories.mdx'),
+  require('../src/DesignSystem/Resources/DesignResources.stories.mdx'),
 ];
 
 configure(loaderFn, module);

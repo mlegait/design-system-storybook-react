@@ -7,17 +7,17 @@
 
 /* eslint-disable no-console */
 
-import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, boolean, number, text } from '@storybook/addon-knobs';
+import { boolean, number, text, withKnobs } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react';
+import React from 'react';
 import {
-  default as Accordion,
   AccordionItem,
   AccordionSkeleton,
-} from '../Accordion';
-import Select from '../Select';
-import SelectItem from '../SelectItem';
+  default as Accordion,
+} from '../../components/Accordion';
+import Select from '../../components/Select';
+import SelectItem from '../../components/SelectItem';
 
 const props = {
   onClick: action('onClick'),
@@ -33,7 +33,8 @@ storiesOf('Accordion', module)
         <AccordionItem
           title={text('The title (title)', 'Section 1 title')}
           open={boolean('Open the section (open)', false)}
-          {...props}>
+          {...props}
+        >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -53,7 +54,8 @@ storiesOf('Accordion', module)
           <Select
             onChange={action('onChange')}
             id="select-1"
-            defaultValue="placeholder-item">
+            defaultValue="placeholder-item"
+          >
             <SelectItem
               disabled
               hidden
@@ -71,7 +73,8 @@ storiesOf('Accordion', module)
               Section 4 title (<em>the title can be a node</em>)
             </h4>
           }
-          {...props}>
+          {...props}
+        >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

@@ -1,6 +1,6 @@
 import { text, withKnobs } from '@storybook/addon-knobs';
 import React from 'react';
-import Link from '../../components/Link/Link';
+import Link from '../../componentsOld/Link/Link';
 
 export default {
   title: 'Components|Navigation/Link',

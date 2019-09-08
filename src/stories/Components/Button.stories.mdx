@@ -2,18 +2,14 @@ import { action } from '@storybook/addon-actions';
 import { Story, Meta, Preview } from '@storybook/addon-docs/blocks';
 import { Button } from '../../components/Button';
 
-<Meta
-  title="Components|Form/Button"
-  component={Button}
-  parameters={{ position: 400 }}
-/>
+<Meta title="Components|Form/Button" component={Button} />
 
 # Button
 
 ## Primary button
 
 <Preview>
-  <Story name="Primary" parameters={{ position: 401 }}>
+  <Story name="Primary">
     <>
       <Button onClick={action('clicked')} label="Button" kind="primary" />
       <Button
@@ -43,7 +39,7 @@ import { Button } from '../../components/Button';
 ## Secondary button
 
 <Preview>
-  <Story name="Secondary" parameters={{ position: 402 }}>
+  <Story name="Secondary">
     <>
       <Button onClick={action('clicked')} label="Button" kind="secondary" />
       <Button
@@ -73,7 +69,7 @@ import { Button } from '../../components/Button';
 ## Tertiary button
 
 <Preview>
-  <Story name="Tertiary" parameters={{ position: 403 }}>
+  <Story name="Tertiary">
     <>
       <Button onClick={action('clicked')} label="Button" kind="tertiary" />
       <Button
@@ -102,7 +98,7 @@ import { Button } from '../../components/Button';
 ## Ghost button
 
 <Preview>
-  <Story name="Ghost" parameters={{ position: 404 }}>
+  <Story name="Ghost">
     <>
       <Button onClick={action('clicked')} label="Button" kind="ghost" />
       <Button
@@ -131,7 +127,7 @@ import { Button } from '../../components/Button';
 ## Danger button
 
 <Preview>
-  <Story name="Danger" parameters={{ position: 405 }}>
+  <Story name="Danger">
     <>
       <Button onClick={action('clicked')} label="Button" kind="danger" />
       <Button
@@ -160,7 +156,7 @@ import { Button } from '../../components/Button';
 ## Small primary button
 
 <Preview>
-  <Story name="Small Primary" parameters={{ position: 406 }}>
+  <Story name="Small Primary">
     <>
       <Button
         onClick={action('clicked')}

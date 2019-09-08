@@ -8,6 +8,8 @@ addDecorator(story => <Container story={story} />);
 const loaderFn = () => [
   require('../src/DesignSystem/Guidelines/Content.stories.mdx'),
   require('../src/DesignSystem/Components/Accordion.stories'),
+  require('../src/DesignSystem/Components/Select.stories'),
+  require('../src/DesignSystem/Components/SkeletonText.stories'),
   require('../src/stories/Components/Button.stories.mdx'),
   require('../src/stories/Components/Link.stories.js'),
   require('../src/DesignSystem/Resources/DesignResources.stories.mdx'),

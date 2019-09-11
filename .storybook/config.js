@@ -19,6 +19,7 @@ const loaderFn = () => [
   require('../src/DesignSystem/Components/ComponentStatus.stories.mdx'),
   require('../src/DesignSystem/Components/Accordion.stories'),
   require('../src/DesignSystem/Components/Breadcrumb.stories'),
+  require('../src/DesignSystem/Components/Button.stories'),
   require('../src/DesignSystem/Components/Link.stories'),
   require('../src/DesignSystem/Components/Select.stories'),
   require('../src/DesignSystem/Components/SkeletonText.stories'),

@@ -43,8 +43,12 @@ defaut.story = { name: 'Default' };
 
 export const skeleton = () => <BreadcrumbSkeleton />;
 skeleton.story = {
-  storyDescription:
-    'Placeholder skeleton state to use when content is loading.',
+  parameters: {
+    docs: {
+      storyDescription:
+        'Placeholder skeleton state to use when content is loading.',
+    },
+  },
 };
 
 export const currentPage = () => (
@@ -59,8 +63,12 @@ export const currentPage = () => (
   </Breadcrumb>
 );
 currentPage.story = {
-  storyDescription:
-    'You can specify a BreadcrumbItem component as the current page with the `isCurrentPage` prop',
+  parameters: {
+    docs: {
+      storyDescription:
+        'You can specify a BreadcrumbItem component as the current page with the `isCurrentPage` prop',
+    },
+  },
 };
 
 export const currentPageAriaCurrent = () => (
@@ -76,6 +84,10 @@ export const currentPageAriaCurrent = () => (
 );
 currentPageAriaCurrent.story = {
   name: 'Current page with aria-current',
-  storyDescription:
-    'You can specify a BreadcrumbItem component as the current page with the `aria-current` prop by specifying `aria-current="page"`',
+  parameters: {
+    docs: {
+      storyDescription:
+        'You can specify a BreadcrumbItem component as the current page with the `aria-current` prop by specifying `aria-current="page"`',
+    },
+  },
 };

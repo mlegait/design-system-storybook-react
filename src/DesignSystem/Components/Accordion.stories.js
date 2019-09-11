@@ -20,7 +20,7 @@ const props = {
 };
 
 export default {
-  title: 'Components|Accordion',
+  title: 'Components/Accordion',
   component: Accordion,
   parameters: {
     componentSubtitle:

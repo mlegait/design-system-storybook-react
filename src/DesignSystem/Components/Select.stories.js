@@ -29,7 +29,7 @@ const props = {
 };
 
 export default {
-  title: 'Components|Select',
+  title: 'Components/Select',
   component: Select,
   parameters: {
     componentSubtitle: `

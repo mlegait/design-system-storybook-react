@@ -15,7 +15,7 @@ const props = () => ({
 });
 
 export default {
-  title: 'Components|SkeletonText',
+  title: 'Components/SkeletonText',
   component: SkeletonText,
   parameters: {
     componentSubtitle:

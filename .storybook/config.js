@@ -24,6 +24,7 @@ const loaderFn = () => [
   require('../src/DesignSystem/Components/CodeSnippet.stories'),
   require('../src/DesignSystem/Components/ContentSwitcher.stories'),
   require('../src/DesignSystem/Components/CopyButton.stories'),
+  require('../src/DesignSystem/Components/DatePicker.stories'),
   require('../src/DesignSystem/Components/Link.stories'),
   require('../src/DesignSystem/Components/Select.stories'),
   require('../src/DesignSystem/Components/SkeletonText.stories'),

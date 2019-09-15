@@ -75,9 +75,8 @@ singleLline.story = {
 export const multiLine = () => {
   const multilineProps = props.multiline();
   return (
-    <div style={{ width: '800px' }}>
-      <CodeSnippet type="multi" {...multilineProps}>
-        {`@mixin grid-container {
+    <CodeSnippet type="multi" {...multilineProps}>
+      {`@mixin grid-container {
   width: 100%;
   padding-right: padding(mobile);
   padding-left: padding(mobile);
@@ -98,20 +97,7 @@ $z-indexes: (
   overflowHidden: - 1,
   floating: 10000
 );`}
-      </CodeSnippet>
-      <br />
-      <CodeSnippet type="multi" {...multilineProps}>
-        {`@mixin grid-container {
-  width: 100%;
-  padding-right: padding(mobile);
-  padding-left: padding(mobile);
-
-  @include breakpoint(bp--xs--major) {
-    padding-right: padding(xs);
-  }
-}`}
-      </CodeSnippet>
-    </div>
+    </CodeSnippet>
   );
 };
 multiLine.story = {

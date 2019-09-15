@@ -1,0 +1,54 @@
+import {
+  Meta,
+  Description,
+  Props,
+  Preview,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import FileUploader, {
+  FileUploaderButton,
+} from '../../components/FileUploader';
+import { action } from '@storybook/addon-actions';
+
+<Meta title="Components|FileUploader (MDX)" component={FileUploader} />
+
+# FileUploader (MDX)
+
+<Description of={FileUploader} type="docgen" />
+
+<Preview>
+  <Story id="components-fileuploader-docspage--file-uploader" />
+</Preview>
+
+<Props of={FileUploader} />
+
+## Stories
+
+### FileUploaderButton
+
+The FileUploaderButton can be used as a standalone component if you do not need the extra UI that comes with FileUploader. The FileUploaderButton is used in FileUploader.
+
+<Preview>
+  <Story name="FileUploaderButton">
+    <FileUploaderButton
+      className="bob"
+      labelText="Add files"
+      name=""
+      multiple={true}
+      disabled={false}
+      buttonKind="primary"
+      disableLabelChanges={false}
+      role="button"
+      tabIndex={0}
+      onChange={action('onChange')}
+    />
+  </Story>
+</Preview>
+
+### FileUploader
+
+The FileUploader components allow the user to upload any necessary files. This uses the FileUploaderButton and Filename components. Filename components will appear below the FileUploaderButton when files are added. Use the filenameStatus prop to control what icon appears in Filename ('edit', 'complete', or 'uploading').
+
+<Preview>
+  <Story id="components-fileuploader-docspage--file-uploader" />
+</Preview>

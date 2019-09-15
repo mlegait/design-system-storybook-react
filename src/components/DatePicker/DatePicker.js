@@ -111,6 +111,9 @@ const carbonFlatpickrMonthSelectPlugin = config => fp => {
   };
 };
 
+/**
+ * Date pickers allow users to select a single or a range of dates.
+ */
 export default class DatePicker extends Component {
   static propTypes = {
     /**
@@ -149,56 +152,6 @@ export default class DatePicker extends Component {
 
     /**
      *  The language locale used to format the days of the week, months, and numbers.
-     *
-     * * `ar` - Arabic
-     * * `at` - Austria
-     * * `be` - Belarusian
-     * * `bg` - Bulgarian
-     * * `bn` - Bangla
-     * * `cat` - Catalan
-     * * `cs` - Czech
-     * * `cy` - Welsh
-     * * `da` - Danish
-     * * `de` - German
-     * * `en` - English
-     * * `eo` - Esperanto
-     * * `es` - Spanish
-     * * `et` - Estonian
-     * * `fa` - Persian
-     * * `fi` - Finnish
-     * * `fr` - French
-     * * `gr` - Greek
-     * * `he` - Hebrew
-     * * `hi` - Hindi
-     * * `hr` - Croatian
-     * * `hu` - Hungarian
-     * * `id` - Indonesian
-     * * `it` - Italian
-     * * `ja` - Japanese
-     * * `ko` - Korean
-     * * `lt` - Lithuanian
-     * * `lv` - Latvian
-     * * `mk` - Macedonian
-     * * `mn` - Mongolian
-     * * `ms` - Malaysian
-     * * `my` - Burmese
-     * * `nl` - Dutch
-     * * `no` - Norwegian
-     * * `pa` - Punjabi
-     * * `pl` - Polish
-     * * `pt` - Portuguese
-     * * `ro` - Romanian
-     * * `si` - Sinhala
-     * * `sk` - Slovak
-     * * `sl` - Slovenian
-     * * `sq` - Albanian
-     * * `sr` - Serbian
-     * * `sv` - Swedish
-     * * `th` - Thai
-     * * `tr` - Turkish
-     * * `uk` - Ukrainian
-     * * `vn` - Vietnamese
-     * * `zh` - Mandarin
      */
     locale: PropTypes.oneOf([
       'ar',

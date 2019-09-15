@@ -41,9 +41,22 @@ const props = {
 };
 
 export default {
-  title: 'Components/DatePicker',
+  title: 'Components/Date picker',
   component: DatePicker,
+  parameters: {
+    componentSubtitle: 'Here is a nice subtitle',
+  },
 };
+
+export const primary = () => (
+  <DatePicker
+    {...props.datePicker()}
+    datePickerType="single"
+    dateFormat={'m/d/Y'}
+  >
+    <DatePickerInput {...props.datePickerInput()} />
+  </DatePicker>
+);
 
 export const simple = () => (
   <DatePicker {...props.datePicker()} short={false} datePickerType="simple">
@@ -53,8 +66,13 @@ export const simple = () => (
 simple.story = {
   parameters: {
     docs: {
-      storyDescription:
-        'A simple Date Picker consists of an input field and no calendar.',
+      storyDescription: `
+**The simple date picker** is a text input without a calendar. 
+You can specify the pattern for the text input to make sure the user enters the 
+correct date format. The default regex pattern that ships with the simple date 
+picker is \`\d{1,2}/\d{4}\` ('dd/yyyy' for short date pickers) and 
+\`\d{1,2}/\d{1,2}/\d{4}\` ('dd/mm/yyyy' or mm/dd/yyyy).
+      `,
     },
   },
 };
@@ -71,8 +89,13 @@ export const singleWithCalendar = () => (
 singleWithCalendar.story = {
   parameters: {
     docs: {
-      storyDescription:
-        'A single Date Picker consists of an input field and a calendar.',
+      storyDescription: `
+**The single date picker** is a text input with a calendar instance attached to it. 
+It also ships with a calendar icon inside the input field. The calendar will 
+open when the input is focused, and the user can both type in a date or select a 
+day from the calendar.
+      `,
+      // 'A single Date Picker consists of an input field and a calendar.',
     },
   },
 };
@@ -100,7 +123,7 @@ rangeWithCalendar.story = {
   parameters: {
     docs: {
       storyDescription:
-        'A range Date Picker consists of two input fields and a calendar.',
+        '**The ranged date picker** has two text inputs with a ranged calendar instance attached to them.',
     },
   },
 };

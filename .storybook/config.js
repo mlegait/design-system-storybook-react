@@ -13,6 +13,7 @@ const loaderFn = () => [
   require('../src/DesignSystem/Tutorial/React.stories.mdx'),
   require('../src/DesignSystem/Tutorial/Vue.stories.mdx'),
 
+  require('../src/DesignSystem/Guidelines/Accessibility.stories.mdx'),
   require('../src/DesignSystem/Guidelines/Content.stories.mdx'),
 
   require('../src/DesignSystem/Components/Overview.stories.mdx'),

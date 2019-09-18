@@ -1,0 +1,63 @@
+import {
+  Meta,
+  Description,
+  Props,
+  Preview,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import DatePicker from '../../components/DatePicker';
+import DatePickerInput from '../../components/DatePickerInput';
+import { action, decorateAction } from '@storybook/addon-actions';
+
+<Meta title="Components/Date picker (MDX)" component={DatePicker} />
+
+# DatePicker (MDX)
+
+**Here is a nice subtitle**
+
+<Description of="." />
+
+<Preview withToolbar>
+  <Story id="components-date-picker--primary" />
+</Preview>
+
+<Props of="." />
+
+## Stories
+
+### Simple
+
+The simple date picker\*\* is a text input without a calendar.
+You can specify the pattern for the text input to make sure the user enters the
+correct date format. The default regex pattern that ships with the simple date
+picker is \`\d{1,2}/\d{4}\` ('dd/yyyy' for short date pickers) and
+\`\d{1,2}/\d{1,2}/\d{4}\` ('dd/mm/yyyy' or mm/dd/yyyy).
+
+<Preview>
+  <Story name="Simple (MDX)">
+    <DatePicker
+      id="date-picker"
+      light={false}
+      onChange={decorateAction([args => args.slice(0, args.length - 2)])(
+        'onPickerChange'
+      )}
+      onClose={action('onClose')}
+      short={false}
+      datePickerType="simple"
+    >
+      <DatePickerInput
+        id="date-picker-input-id"
+        className="some-class"
+        labelText="Date Picker label"
+        pattern="d{12}/d{4}"
+        placeholder="mm/dd/yyyy"
+        disabled={false}
+        invalid={false}
+        invalidText="A valid value is required"
+        iconDescription="Icon description"
+        onClick={action('onClick')}
+        onChange={action('onInputChange')}
+      />
+    </DatePicker>
+  </Story>
+</Preview>

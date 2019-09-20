@@ -4,6 +4,12 @@ import Container from './Container';
 
 addDecorator(story => <Container story={story} />);
 
+const componentStories = require.context(
+  '../src/DesignSystem/Components/',
+  true,
+  /\.stories\.(js|mdx)$/
+);
+
 // We want to force the files to load in a specific order.
 const loaderFn = () => [
   require('../src/DesignSystem/GetStarted/AboutCarbon.stories.mdx'),
@@ -16,27 +22,12 @@ const loaderFn = () => [
   require('../src/DesignSystem/Guidelines/Accessibility.stories.mdx'),
   require('../src/DesignSystem/Guidelines/Content.stories.mdx'),
 
-  require('../src/DesignSystem/Components/Overview.stories.mdx'),
-  require('../src/DesignSystem/Components/ComponentStatus.stories.mdx'),
-  require('../src/DesignSystem/Components/Accordion.stories'),
-  require('../src/DesignSystem/Components/Breadcrumb.stories'),
-  require('../src/DesignSystem/Components/Button.stories'),
-  require('../src/DesignSystem/Components/Checkbox.stories'),
-  require('../src/DesignSystem/Components/CodeSnippet.stories'),
-  require('../src/DesignSystem/Components/ContentSwitcher.stories'),
-  require('../src/DesignSystem/Components/CopyButton.stories'),
-  require('../src/DesignSystem/Components/DatePicker.stories'),
-  require('../src/DesignSystem/Components/FileUploader.stories'),
-  require('../src/DesignSystem/Components/FileUploader.stories.mdx'),
-  require('../src/DesignSystem/Components/Link.stories'),
-  require('../src/DesignSystem/Components/Select.stories'),
-  require('../src/DesignSystem/Components/SkeletonText.stories'),
+  // Some magic to load component stories sorted alphabetically
+  ...componentStories.keys().map(filename => componentStories(filename)),
 
   require('../src/DesignSystem/Patterns/Overview.stories.mdx'),
 
   require('../src/DesignSystem/Experimental/Overview.stories.mdx'),
-
-  // require('../src/stories/Components/Button.stories.mdx'),
 
   require('../src/DesignSystem/Resources.stories.mdx'),
 

@@ -12,7 +12,7 @@ const componentStories = require.context(
 
 // We want to force the files to load in a specific order.
 const loaderFn = () => [
-  require('../src/DesignSystem/GetStarted/AboutCarbon.stories.mdx'),
+  require('../src/DesignSystem/GetStarted/About.stories.mdx'),
   require('../src/DesignSystem/GetStarted/Design.stories.mdx'),
   require('../src/DesignSystem/GetStarted/Develop.stories.mdx'),
 

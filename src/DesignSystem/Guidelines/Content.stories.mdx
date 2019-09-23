@@ -1,5 +1,10 @@
 import { Meta } from '@storybook/addon-docs/blocks';
-import { CorrectIncorrectCards } from '../../componentsDesignSystemUtils';
+import {
+  CardsGrid,
+  ExampleCard,
+  CorrectIncorrectCards,
+  GRID_GAP_LARGE,
+} from '../../componentsDesignSystemUtils';
 
 <Meta title="Guidelines/Content" />
 
@@ -63,12 +68,17 @@ _Examples:_
 
 The _active voice_ is direct and punchy, and emphasizes the subject of the sentence. The subject clearly “acts upon” the verb (hence, “active”). For example, “John ate the apple.” In situations where either voice will work, generally choose the active voice for more directness.
 
-<CorrectIncorrectCards
-  correctText="Next, the admin configures access privileges."
-  correctCaption="Do use active voice when appropriate."
-  incorrectText="Next, access privileges are configured by the admin."
-  incorrectCaption="Don’t use passive voice when active voice will suffice."
-/>
+<CardsGrid gridGap={GRID_GAP_LARGE}>
+  <ExampleCard
+    isCorrect
+    text="Next, the admin configures access privileges."
+    caption="Do use active voice when appropriate."
+  />
+  <ExampleCard
+    text="Next, access privileges are configured by the admin."
+    caption="Don’t use passive voice when active voice will suffice."
+  />
+</CardsGrid>
 
 The _passive voice_, on the other hand, flips the construction so that the subject is secondary to the verb and object (hence, “passive”). Often, the subject is not even included in the sentence. For example, “The apple was eaten by John” or just “The apple was eaten.” Only sentences that contain direct objects can be constructed in the passive voice. Thus, “John ate” cannot be constructed passively.
 

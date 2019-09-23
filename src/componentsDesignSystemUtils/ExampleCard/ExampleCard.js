@@ -1,7 +1,7 @@
-import classNames from "classnames";
-import PropTypes from "prop-types";
-import React from "react";
-import "./ExampleCard.scss";
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
+import './ExampleCard.scss';
 
 const ExampleCard = ({ isCorrect, text, caption }) => {
   const validIcon = (
@@ -42,9 +42,9 @@ const ExampleCard = ({ isCorrect, text, caption }) => {
   return (
     <div className="exampleCard">
       <div
-        className={classNames("exampleCard__card", {
-          "exampleCard__card--correct": isCorrect,
-          "exampleCard__card--incorrect": !isCorrect
+        className={classNames('exampleCard__card', {
+          'exampleCard__card--correct': isCorrect,
+          'exampleCard__card--incorrect': !isCorrect,
         })}
       >
         {isCorrect ? validIcon : invalidIcon}
@@ -56,9 +56,13 @@ const ExampleCard = ({ isCorrect, text, caption }) => {
 };
 
 ExampleCard.propTypes = {
-  isCorrect: PropTypes.bool.isRequired,
+  isCorrect: PropTypes.bool,
   text: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired
+  caption: PropTypes.string.isRequired,
+};
+
+ExampleCard.defaultProps = {
+  isCorrect: false,
 };
 
 export default ExampleCard;

@@ -1,7 +1,102 @@
 import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
 import { Story, Meta } from '@storybook/addon-docs/blocks';
+import {
+  CardsGrid,
+  ResourceCard,
+  RESOURCE_TYPE_GITHUB,
+  RESOURCE_TYPE_SKETCH,
+} from '../componentsDesignSystemUtils';
 
 <Meta title="Resources" />
 
-TODO
+# Resources
+
+## Development resources
+
+### GitHub repos
+
+<CardsGrid>
+  <ResourceCard
+    title="Carbon Components"
+    type={RESOURCE_TYPE_GITHUB}
+    url="https://github.com/carbon-design-system/carbon-components"
+  />
+  <ResourceCard
+    title="Carbon Components React"
+    type={RESOURCE_TYPE_GITHUB}
+    url="https://github.com/carbon-design-system/carbon-components-react"
+  />
+  <ResourceCard
+    title="Carbon Components Angular"
+    type={RESOURCE_TYPE_GITHUB}
+    url="https://github.com/carbon-design-system/carbon-components-angular"
+  />
+  <ResourceCard
+    title="Carbon Components Vue"
+    type={RESOURCE_TYPE_GITHUB}
+    url="https://github.com/carbon-design-system/carbon-components-vue"
+  />
+  <ResourceCard
+    title="Carbon boilerplate"
+    type={RESOURCE_TYPE_GITHUB}
+    url="https://github.com/carbon-design-system/carbon-boilerplate"
+  />
+</CardsGrid>
+
+### Storybooks
+
+// TODO
+
+## Design resources
+
+### Theme libraries
+
+<CardsGrid>
+  <ResourceCard
+    title="White theme"
+    type={RESOURCE_TYPE_SKETCH}
+    url="sketch://add-library/cloud/JaVzz"
+  />
+  <ResourceCard
+    title="Gray 10 theme"
+    type={RESOURCE_TYPE_SKETCH}
+    url="sketch://add-library/cloud/Onwv2"
+  />
+  <ResourceCard
+    title="Gray 90 theme"
+    type={RESOURCE_TYPE_SKETCH}
+    url="sketch://add-library/cloud/eo37p"
+  />
+  <ResourceCard
+    title="Gray 100 theme"
+    type={RESOURCE_TYPE_SKETCH}
+    url="sketch://add-library/cloud/d13Ll"
+  />
+</CardsGrid>
+
+### Color, grid, and icons
+
+### GitHub repos
+
+**IBM Plex**
+
+Carbon uses the open-source typeface [IBM Plex](https://github.com/ibm/plex) – carefully designed to meet IBM’s needs as a global technology company and reflect IBM’s spirit, beliefs, and design principles.
+
+**IBM Design Language**
+
+Carbon delivers the [IBM Design Language](https://www.ibm.com/design/language/) as tools for designers and developers, guidance, tutorials, and support.
+
+## Tools
+
+## Reading
+
+// TODO
+
+### Featured stories
+
+// TODO
+
+### Articles
+
+// TODO

@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+$card-min-height: 10rem;
+
+.resourceCard {
+  font-family: $font-family;
+  padding: $card-padding;
+  background-color: white;
+  border: 1px solid lightgray;
+  text-decoration: none;
+  color: currentColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: $card-min-height;
+
+  &:hover {
+    background-color: #eee;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

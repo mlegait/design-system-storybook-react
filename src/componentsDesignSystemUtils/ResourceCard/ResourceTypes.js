@@ -1,0 +1,4 @@
+export const RESOURCE_TYPE_GITHUB = 'github';
+export const RESOURCE_TYPE_SKETCH = 'sketch';
+
+export const RESOURCE_TYPES = [RESOURCE_TYPE_GITHUB, RESOURCE_TYPE_SKETCH];

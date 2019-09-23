@@ -1,7 +1,9 @@
+@import '../variables.scss';
+
 $color-correct: #24a148;
 $color-incorrect: #ee538b;
-$card-padding: 1rem;
 $icon-size: 24px;
+$card-min-height: 15rem;
 
 .exampleCard {
   &__card {
@@ -9,7 +11,7 @@ $icon-size: 24px;
     padding: $card-padding;
     background-color: white;
     border: 1px solid lightgray;
-    min-height: 15rem;
+    min-height: $card-min-height;
     display: flex;
     align-items: center;
 

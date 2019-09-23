@@ -1,3 +1,3 @@
-import { CorrectIncorrectCards } from "./CorrectIncorrectCards";
-
-export { CorrectIncorrectCards };
+export * from './CardsGrid';
+export * from './CorrectIncorrectCards';
+export * from './ResourceCard';

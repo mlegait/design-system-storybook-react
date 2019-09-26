@@ -41,7 +41,7 @@ const props = {
 };
 
 export default {
-  title: 'Components/Date picker',
+  title: 'Components/Date picker (DocsPage)',
   component: DatePicker,
   parameters: {
     componentSubtitle: 'Here is a nice subtitle',

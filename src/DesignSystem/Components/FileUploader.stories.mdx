@@ -8,7 +8,9 @@ import {
 import FileUploader, {
   FileUploaderButton,
 } from '../../components/FileUploader';
+import Button from '../../components/Button';
 import { action } from '@storybook/addon-actions';
+import { settings } from 'carbon-components';
 import fileUploaderUsage1 from '../images/file-uploader-usage-1.png';
 import fileUploaderUsage2 from '../images/file-uploader-usage-2.png';
 import fileUploaderUsage3 from '../images/file-uploader-usage-3.png';
@@ -20,7 +22,36 @@ import fileUploaderUsage3 from '../images/file-uploader-usage-3.png';
 <Description of={FileUploader} />
 
 <Preview>
-  <Story id="components-fileuploader-docspage--file-uploader" />
+  <Story name="FileUploader">
+    {() => {
+      const { prefix } = settings;
+      let fileUploader;
+      return (
+        <div className={`${prefix}--file__container`}>
+          <FileUploader
+            labelTitle="Upload"
+            labelDescription="only .jpg files at 500mb or less"
+            buttonLabel="Add files"
+            filenameStatus="edit"
+            accept={['.jpg', '.png']}
+            name=""
+            multiple={true}
+            ref={node => (fileUploader = node)}
+          />
+          <Button
+            kind="secondary"
+            small
+            style={{ marginTop: '1rem' }}
+            onClick={() => {
+              fileUploader.clearFiles();
+            }}
+          >
+            Clear File
+          </Button>
+        </div>
+      );
+    }}
+  </Story>
 </Preview>
 
 <Props of={FileUploader} />
@@ -46,14 +77,6 @@ The FileUploaderButton can be used as a standalone component if you do not need 
       onChange={action('onChange')}
     />
   </Story>
-</Preview>
-
-### FileUploader
-
-The FileUploader components allow the user to upload any necessary files. This uses the FileUploaderButton and Filename components. Filename components will appear below the FileUploaderButton when files are added. Use the filenameStatus prop to control what icon appears in Filename ('edit', 'complete', or 'uploading').
-
-<Preview>
-  <Story id="components-fileuploader-docspage--file-uploader" />
 </Preview>
 
 # Usage

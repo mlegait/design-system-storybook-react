@@ -40,6 +40,7 @@
     "@storybook/addon-knobs": "^5.3.6",
     "@storybook/addon-links": "^5.3.6",
     "@storybook/addon-viewport": "^5.3.6",
+    "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.6",
     "babel-loader": "^8.0.6",
     "carbon-components": "^10.6.0",

@@ -6,7 +6,7 @@ export const GRID_GAP_SMALL = '3px';
 export const GRID_GAP_MEDIUM = '10px';
 export const GRID_GAP_LARGE = '30px';
 
-const GRID_GAPS = [GRID_GAP_SMALL, GRID_GAP_MEDIUM];
+const GRID_GAPS = [GRID_GAP_SMALL, GRID_GAP_MEDIUM, GRID_GAP_LARGE];
 
 const CardsGrid = ({ gridGap, children }) => (
   <div className="cardGrid" style={{ gap: gridGap }}>

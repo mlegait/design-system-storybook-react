@@ -10,7 +10,7 @@ module.exports = {
     '../src/DesignSystem/Guidelines/Accessibility.stories.mdx',
     '../src/DesignSystem/Guidelines/Content.stories.mdx',
 
-    '../src/DesignSystem/Components/**/*.stories.(js|mdx)',
+    '../src/DesignSystem/Components/*.stories.(js|mdx)',
 
     '../src/DesignSystem/Patterns/Overview.stories.mdx',
 
@@ -27,7 +27,7 @@ module.exports = {
   addons: [
     '@storybook/preset-create-react-app',
     '@storybook/addon-actions',
-    { name: '@storybook/addon-docs', configureJSX: true },
+    '@storybook/addon-docs',
     '@storybook/addon-knobs',
     '@storybook/addon-links',
     '@storybook/addon-viewport',

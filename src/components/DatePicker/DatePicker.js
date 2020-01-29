@@ -522,6 +522,7 @@ export default class DatePicker extends Component {
           ref: this.assignToInputFieldRef,
         });
       }
+      return null;
     });
     return (
       <div className={`${prefix}--form-item`}>
